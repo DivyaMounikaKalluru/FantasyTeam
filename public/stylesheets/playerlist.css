@@ -1,0 +1,51 @@
+table.sortable thead {
+  background-color:#eee;
+  color:#666666;
+  font-weight: bold;
+  cursor: default;
+}
+
+button {
+ background-color: #002a5c;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align:center;
+}
+
+#players {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+
+}
+
+#players td, #players th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+#players tr:nth-child(even){background-color: #f2f2f2;}
+
+#players tr:hover {background-color: #ddd;}
+
+#players th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #4CAF50;
+color: white;
+}
+
+
+  
+#Logout{
+ background-color: #002a5c;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align:center;
+}
+

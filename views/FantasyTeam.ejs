@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fantasy Team</title>
+   
+   <link rel="stylesheet" type="text/css" href="/stylesheets/playerlist.css">
+  <script type="text/javascript" src="/javascripts/sortable.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="/javascripts/weekstats.js"></script>
+  
+</head>
+<body>
+  
+  <div class="Title">
+        <h3>Fantasy Team</h3>
+		<h3>All the best to your Dream Team.....!!!</h3>
+    </div>
+	
+	<table class="sortable" id="players">
+	
+  	 <thead>
+		<tr>
+			<th><p>Rank</p></th>
+			<th><p>Player</p></th>
+			<th><p>Team</p></th>
+			<th><p>FantasyPosition</p></th>
+			<th><p>Age</p></th>
+			<th><p>GamesPlayed</p></th>
+			<th><p>PassesCompleted</p></th>
+			<th><p>FantasyPoints</p></th>
+			<th><p>PPRScoring</p></th>
+			<th><p>PositionRank</p></th>
+		</tr>
+	 </thead>
+  	 
+  <!-- Loop through quotes result.recordset[1].Name -->
+    <tbody>
+  
+	 <% result.recordset.forEach(function(player) { %>
+	 <tr>
+	 <td> <span><%= player.Rank %></span> </td>
+	 <td> <span><%= player.Player %></span> </td>
+	 <td> <span><%= player.Team %></span> </td>
+	 <td> <span><%= player.FantasyPosition %></span> </td>
+	 <td> <span><%= player.Age %></span> </td>
+	 <td> <span><%= player.GamesPlayed %></span> </td>
+	 <td> <span><%= player.PassesCompleted %></span> </td>
+	 <td> <span><%= player.FantasyPoints %></span> </td>
+	 <td> <span><%= player.PPRScoring %></span> </td>
+	 <td> <span><%= player.PositionRank %></span> </td>
+	 <!--<td><input type="checkbox" class="checkbox" name="playerName" value="<%= player.Name+","+player.Team %>"></td>-->
+	 </tr>
+	
+ 
+  <% }); %> 
+</tbody>
+</table>
+<br><br>
+<button id="weekstats" onclick="location.href = '/weekstats';" id="weekstats">Weekly Stats!!!</button>
+<!--<button id="weekstats" onclick="weekstats()" id="weekstats">Weekly Stats!!!</button> -->
+
+<!--<script type="text/javascript" src="/javascripts/playerselection.js"></script>-->
+</body>
+</html>

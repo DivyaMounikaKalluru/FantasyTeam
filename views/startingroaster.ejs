@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Starting Roster</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/roster.css">
+  
+  <script type="text/javascript" src="/javascripts/roster.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css">
+  
+</head>
+<body >
+  
+  <div class="header">
+        <h3>Starting Roster</h3>
+		</div>
+<div class="content">		
+<table class="roster">
+<tr>
+<td>
+  <label for="name" id="quarterback">QuarterBack</label></td>
+  <td><input disabled id='{{ $quarterback }}' name="QuarterBack" value='1'>
+  <i class="fas fa-minus-circle" aria-hidden="true" onclick="increment(-1, '{{ $quarterback }}')"></i>
+  <i class="fas fa-plus-circle" aria-hidden="true" onclick="increment(1, '{{ $quarterback }}')"></i>
+  </td>
+</tr>
+
+<tr>
+<td>
+  <label for="name" >RunningBacks</label></td>
+  <td>
+  <input disabled id='{{ $RunningBacks }}' name="RunningBacks" value='2'>
+  <i class="fas fa-minus-circle" aria-hidden="true" onclick="increment(-1, '{{ $RunningBacks }}')"></i>
+  <i class="fas fa-plus-circle" aria-hidden="true" onclick="increment(1, '{{ $RunningBacks }}')"></i>
+</td>
+</tr>
+
+<tr>
+<td>
+  <label for="name" >WideReceivers</label></td>
+  <td>
+  <input disabled id='{{ $WideReceivers }}' name="WideReceivers" value='2'>
+  <i class="fas fa-minus-circle" aria-hidden="true" onclick="increment(-1, '{{ $WideReceivers }}')"></i>
+  <i class="fas fa-plus-circle" aria-hidden="true" onclick="increment(1, '{{ $WideReceivers }}')"></i>
+</td>
+</tr>
+<td>
+  <label for="name" id="TightEnd">TightEnd</label></td>
+  <td>
+  <input disabled id='{{ $TightEnd }}' name="TightEnd" value='1'>
+  <i class="fas fa-minus-circle" aria-hidden="true" onclick="increment(-1, '{{ $TightEnd }}')"></i>
+  <i class="fas fa-plus-circle" aria-hidden="true" onclick="increment(1, '{{ $TightEnd }}')"></i>
+</td>
+</tr>
+</table>
+<br><br>		
+<button id="PlayerStats" onclick="roster()">Player Stats</button>
+<script type="text/javascript" src="/javascripts/playerselection.js"></script>
+<script type="text/JavaScript"> 
+function increment(incrementor, target){
+    var value = parseInt(document.getElementById(target).value);
+    value+=incrementor;
+    document.getElementById(target).value = value;
+}
+/*$('.checkbox').click(function() {
+  //var playerselection  = $(this).closest("tr").find('td:eq(0)').text();
+  var playerselection  = $(this).attr('value').text();
+  //changing td:eq(x) will give you corresponding clicked row's cell
+  alert(playerselection);
+
+};
+
+$('input[name="playerName"]:checked').each(function() {
+   console.log(this.value); 
+});
+
+//Working code for playerselection.
+$( "input[type=checkbox]" ).on( "click", function() {
+ var players = [];
+ players = $.map($('input[name="playerName"]:checked'), function(c){return c.value; })
+  //$.each($("input[name='[playerName']:checked"), function() {
+                    players.push($("input:checked" ).val());
+                });
+  alert("My location themes colors are: " + players.join(", "));              
+  //alert($( "input:checked" ).val() + " is checked!" );
+});
+*/
+</script>
+</div>
+</body>
+</html>

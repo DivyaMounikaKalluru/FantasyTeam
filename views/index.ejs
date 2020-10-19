@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Login Page
+</title>
+<link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
+<script type="text/javascript" src="/javascripts/login.js"></script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="content">
+<div class="header">
+<h2>Login Here!</h2>
+</div>
+
+<div class="login"> 
+<p id="errormessage"></p>
+<div class="input-group">
+<label>Enter Username</label>
+<input type="text" id="username" name="username" >
+</div>
+<div class="input-group">
+<label>Enter Password</label>
+<input type="password" id="password" name="password">
+</div>
+<div>
+<button   id="login" class="btn" onclick="login()"
+name="login_user"><i class="fa fa-sign-in" aria-hidden="true"></i>Login
+</button>
+</div>
+<p class="signup">
+Don't have an account yet?
+<a href="/register" class="signup">
+Signup!
+</a>
+</p>
+</div>
+</div>
+</body>
+</html>

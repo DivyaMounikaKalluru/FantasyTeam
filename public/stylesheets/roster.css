@@ -1,0 +1,74 @@
+* {
+/*margin: 5px;*/
+padding: 3px;
+width: 250 px;
+/*border:1px gray;*/
+}
+/*body {
+font-size: 140%;
+/*background: #AAAAAA;
+background-image: url('/images/NFLwebstory.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}*/
+
+body {
+	background-image: url('/images/roster.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+.content {
+float: center;
+width: 20%;
+margin: 0px auto;
+padding: 20px;
+border: 1px solid #B0C4DE;
+/*background: white;#acacac*/
+background-color: #acacac;
+border-radius: 0px 0px 10px 10px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  align:"center";
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+input{
+	width: 12%
+}
+tr {
+  background-color: #dddddd;
+}
+
+
+.header {
+width: 20%;
+margin: 50px auto 0px;
+color: white;
+/*background:DodgerBlue ;*/
+/*background:transparent ;*/
+background-color: #d60a0b;
+text-align: center;
+border: 1px solid #B0C4DE;
+border-bottom: none;
+border-radius: 10px 10px 0px 0px;
+padding: 20px;
+}
+
+#PlayerStats{
+ background-color: #002a5c;
+  
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align:center;
+}
+

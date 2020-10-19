@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weekly Statistics</title>
+  <!-- <link  type="text/css" href="/stylesheets/participantlist.css" /> -->
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script> 
+   
+  <link rel="stylesheet" type="text/css" href="/stylesheets/playerlist.css">
+</head>
+<body>
+
+  <div class="Title">
+        <h3>Weekly Statistics of Participants</h3>
+    </div>
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<table class="sortable" id="players">
+	
+  	 <thead>
+		<tr>
+			<th><p>Participants</p></th>
+			<th><p>Week01</p></th>
+			<th><p>Week02</p></th>
+			<th><p>Week03</p></th>
+			<th><p>Week04</p></th>
+			<th><p>Week05</p></th>
+			<th><p>Week06</p></th>
+			<th><p>Week07</p></th>
+			<th><p>Week08</p></th>
+			<th><p>Week09</p></th>
+			<th><p>Week10</p></th>
+			<th><p>Week11</p></th>
+			<th><p>Week12</p></th>
+			<th><p>Week13</p></th>
+			<th><p>Week14</p></th>
+			<th><p>Week15</p></th>
+			<th><p>Week16</p></th>
+			<th><p>Week17</p></th>
+		</tr>
+	 </thead>
+  	 
+  <!-- Loop through quotes result.recordset[1].Name -->
+   
+    <tbody>
+     <% result.recordset.forEach(function(participant) { %>
+	 <tr>
+	 <td> <span><%= participant.Username %></span> </td>
+	 <td> <span><%= participant.Week01 %></span> </td>
+	 <td> <span><%= participant.Week02 %></span> </td>
+	 <td> <span><%= participant.Week03 %></span> </td>
+	 <td> <span><%= participant.Week04 %></span> </td>
+	 <td> <span><%= participant.Week05 %></span> </td>
+	 <td> <span><%= participant.Week06 %></span> </td>
+	 <td> <span><%= participant.Week07 %></span> </td>
+	 <td> <span><%= participant.Week08 %></span> </td>
+	 <td> <span><%= participant.Week09 %></span> </td>
+	 <td> <span><%= participant.Week10 %></span> </td>
+	 <td> <span><%= participant.Week11 %></span> </td>
+	 <td> <span><%= participant.Week12 %></span> </td>
+	 <td> <span><%= participant.Week13 %></span> </td>
+	 <td> <span><%= participant.Week14 %></span> </td>
+	 <td> <span><%= participant.Week15 %></span> </td>
+	 <td> <span><%= participant.Week16 %></span> </td>
+	 <td> <span><%= participant.Week17 %></span> </td>
+	 <!--<td><input type="checkbox" class="checkbox" name="participantName" value="<%= participant.Name+","+participant.Team %>"></td>-->
+	 </tr>
+	
+ 
+  <% }); %> 
+    
+</tbody>
+</table>
+<br><br>
+<button id="Logout" onclick="location.href = '/Login';" id="logout">Logout</button>
+</body>
+</html>

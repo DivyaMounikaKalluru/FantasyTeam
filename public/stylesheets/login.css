@@ -1,0 +1,116 @@
+* {
+/*margin: 5px;*/
+padding: 3px;
+width: 250 px;
+/*border:1px gray;*/
+}
+body {
+font-size: 140%;
+/*background: #AAAAAA;*/
+background-image: url('/images/NFLwebstory.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+.content{
+	float: right;
+	background-color: transparent;
+}
+.header {
+width: 90%;
+margin: 50px auto 0px;
+color: white;
+/*background:DodgerBlue ;*/
+/*background:DodgerBlue ;*/
+background-color: #d60a0b;
+text-align: center;
+border: 1px solid #B0C4DE;
+border-bottom: none;
+border-radius: 10px 10px 0px 0px;
+padding: 20px;
+}
+#errormessage {
+	color: white;
+}
+.login {
+/*width: 30%;*/
+margin: 0px auto;
+padding: 20px;
+border: 1px solid #B0C4DE;
+/*background: white;#acacac*/
+background-color: #acacac;
+border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+margin: 10px 10px 10px 10px;
+}
+.input-group label {
+display: block;
+color: white;
+text-align: left;
+margin: 5px;
+font-size: 20px;
+}
+.input-group input {
+height: 32px;
+width: 95%;
+padding: 5px 10px;
+font-size: 15px;
+border-radius: 10px;
+border: 1px solid gray;
+}
+/*.login-image{
+background-image: url(Login-button1.png);
+background-color: transparent;
+background-repeat: no-repeat;
+}*/
+
+.btn{
+ background-color: #002a5c;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align:center;
+
+/*
+background-color: transparent;
+background-repeat: no-repeat;
+background-position:0px 0px;
+cursor: pointer;
+vertical-align:middle;
+border:none;
+height: 16px;
+background-image: url(login-button.jpg);
+*/
+/*
+padding: 12px;
+font-size: 16px;
+color: black
+background:#FF7F50 ;
+border: ridge;
+border-radius: 10px;*/
+}
+.signup{
+color:white;
+}
+.signup a{
+color:#002a5c;
+}
+.error {
+width: 92%;
+margin: 0px auto;
+padding: 10px;
+/*border: 1px solid #a94442;*/
+color: #a94442;
+background: #f2dede;
+border-radius: 5px;
+text-align: left;
+}
+.success {
+color: #3c763d;
+background: #dff0d8;
+border: 2px solid #3c763d;
+margin-bottom: 20px;
+}
